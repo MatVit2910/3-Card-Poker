@@ -1,6 +1,7 @@
 # 3-Card Poker
 
-A simple, command-line implementation of the popular casino game **Three Card Poker**. This project allows users to play against a dealer, place bets, and track their winnings.
+A simple implementation of the popular casino game **Three Card Poker**. This project allows users to play against a dealer, place bets, and track their winnings.  
+Done in Java using the Client-Server Model.
 
 ## 🃏 How to Play
 
