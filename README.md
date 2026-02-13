@@ -27,7 +27,7 @@ The goal is to beat the dealer with a better 3-card hand.
         * **Dealer Wins**: Player loses both bets.
         * **Tie**: Both bets push.
 
-<img width="933" height="663" alt="image" src="https://github.com/user-attachments/assets/ac995913-6be9-42fe-8b3f-7626bfa0f5bd" />
+<img width="805" height="577" alt="image" src="https://github.com/user-attachments/assets/ac995913-6be9-42fe-8b3f-7626bfa0f5bd" />
 
 
 <img width="805" height="577" alt="image" src="https://github.com/user-attachments/assets/db8fafbe-c038-4b44-ae4d-393e721b5855" />
