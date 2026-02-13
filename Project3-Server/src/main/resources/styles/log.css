@@ -1,0 +1,40 @@
+.root{
+    -fx-background-image: url("/images/background.jpeg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.title-text{
+    -fx-font-family: "Irish Grover";
+    -fx-font-size: 96;
+    -fx-text-fill: #CAA855;
+}
+
+.log-container{
+    -fx-background-color: #115939;
+    -fx-border-radius: 30;
+    -fx-border-width: 15;
+    -fx-background-radius: 30;
+    -fx-border-color: #02180E;
+    -fx-max-width: 700;
+}
+
+.log-container .list-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-family: "Irish Grover";
+    -fx-font-size: 20;
+    -fx-wrap-text: true;
+}
+
+.nav-button{
+    -fx-font-family: "Irish Grover";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 50;
+}
+
+.nav-button:hover{
+    -fx-cursor: hand;
+    -fx-underline: true;
+}

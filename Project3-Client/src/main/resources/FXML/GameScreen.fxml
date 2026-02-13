@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" styleClass="root">
+    <top>
+        <HBox styleClass="menu-display">
+            <Label styleClass="menu-Option" text="OPTIONS |"/>
+            <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+            <Label styleClass="menu-Option" onMouseClicked="#handleHandsOption" text="HANDS"/>
+            <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+            <Label styleClass="menu-Option" onMouseClicked="#handleRulesOption"  text="RULES"/>
+            <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+            <Label styleClass="menu-Option" onMouseClicked="#handleFreshStartOption" text="FRESH START"/>
+            <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+            <Label styleClass="menu-Option" onMouseClicked="#handleNewLookOption" text="NEW LOOK"/>
+            <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+            <Label styleClass="menu-Option" onMouseClicked="#handleExit" text="EXIT" fx:id="exitOption"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="10" styleClass="info-container">
+            <Label styleClass="player-hand-text" text="Dealer's Hand"/>
+            <HBox styleClass="hand-container">
+                <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+
+                <ImageView fx:id="dealerCard1" styleClass="image-container" fitHeight="200" fitWidth="150">
+                    <Image url="/cards/back_of_card.png"/>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+                <ImageView fx:id="dealerCard2" styleClass="image-container" fitHeight="200" fitWidth="150">
+                    <Image url="/cards/back_of_card.png"/>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+                <ImageView fx:id="dealerCard3" styleClass="image-container" fitHeight="200" fitWidth="150">
+                    <Image url="/cards/back_of_card.png"/>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+            </HBox>
+            <Label styleClass="bet-label" text="Total Winnings: $0" fx:id="totalWinningsGame"/>
+            <HBox styleClass="hand-container">
+                <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+
+                <ImageView fx:id="userCard1" styleClass="image-container" fitHeight="200" fitWidth="150">
+                    <Image url="/cards/back_of_card.png"/>
+                </ImageView>
+
+                <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+                <ImageView fx:id="userCard2" styleClass="image-container" fitHeight="200" fitWidth="150">
+                    <Image url="/cards/back_of_card.png"/>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+                <ImageView fx:id="userCard3" styleClass="image-container" fitHeight="200" fitWidth="150">
+                    <Image url="/cards/back_of_card.png"/>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" minWidth="30"/>
+            </HBox>
+            <Label styleClass="player-hand-text" text="Your Hand"/>
+        </VBox>
+    </center>
+
+
+    <right>
+        <VBox styleClass="control-panel" alignment="CENTER">
+            <Region VBox.vgrow="ALWAYS" minHeight="10"/>
+            <Label styleClass="bet-label" text="Ante Bet"/>
+            <TextField styleClass="bet-field" fx:id="anteBetField" promptText="USE TEXT FORMATER"/>
+            <Label styleClass="bet-label" text="Pair Plus"/>
+            <TextField styleClass="bet-field" fx:id="pairPlusField" promptText="USE TEXT FORMATER"/>
+            <Region VBox.vgrow="ALWAYS" minHeight="15"/>
+            <ListView styleClass="games-log-panel" fx:id="playerLog"/>
+            <Region VBox.vgrow="ALWAYS" minHeight="20"/>
+
+            <HBox alignment="CENTER" spacing="30">
+                <StackPane alignment="CENTER">
+                    <Button styleClass="game-button" fx:id="dealBttn" visible="false" onAction="#handleDealButton" text="DEAL"/>
+                    <Button styleClass="game-button" fx:id="summaryBttn" visible="false" onAction="#handleSummaryButton" text="SUMMARY"/>
+                    <Button styleClass="game-button" fx:id="startBttn" onAction="#handleStartButton" text="START" />
+                </StackPane>
+                <!--TODO HIDE THIS BUTTON-->
+                <Button styleClass="game-button-fold" fx:id="foldBttn" visible="false" onAction="#handleFoldButton" text="FOLD"/>
+            </HBox>
+            <Region VBox.vgrow="ALWAYS" minHeight="30"/>
+        </VBox>
+    </right>
+</BorderPane>
+

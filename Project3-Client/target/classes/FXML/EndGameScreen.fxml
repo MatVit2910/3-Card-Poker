@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" styleClass="root" fx:id="summaryID">
+    <center>
+        <VBox alignment="CENTER" spacing="20" translateX="250">
+            <Label styleClass="title-text" fx:id="titleSummary" text="YOU WIN!"/>
+            <Label styleClass="game-summary-text" fx:id="betsSummary" text="ANTE / PLAY......$"/>
+            <Label styleClass="game-summary-text" fx:id="pairPlusSummary" text="PAIR PLUS......$"/>
+            <Label styleClass="game-summary-text" fx:id="totalSummary" text="TOTAL......$"/>
+            <Button text="AGAIN !" onAction="#handlePlayAgain" styleClass="replay-bttn"/>
+            <Label styleClass="game-summary-text" fx:id="totalWinningsSummary" text="Total Winnings:"/>
+
+        </VBox>
+    </center>
+    <bottom>
+        <HBox styleClass="exit-bottom">
+            <Label styleClass="menu-Option" onMouseClicked="#handleExit" text="EXIT" fx:id="exitOption"/>
+        </HBox>
+    </bottom>
+</BorderPane>
+

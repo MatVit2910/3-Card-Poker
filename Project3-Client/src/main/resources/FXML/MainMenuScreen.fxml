@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller" styleClass="root" fx:id="mainMenuID">
+    <center>
+        <VBox alignment="CENTER" spacing="15" translateX="250">
+            <Label styleClass="title-text" text="3 CARD POKER"/>
+            <TextField fx:id="portInput" styleClass="port-field" promptText="Port Number"/>
+            <TextField fx:id="IPAddressInput" styleClass="port-field" promptText="IP Adress"/>
+            <Button fx:id="toggleButton" onAction="#handleTryConnection" styleClass="start-button" text="PLAY" />
+        </VBox>
+    </center>
+    <bottom>
+        <HBox styleClass="exit-bottom">
+            <Label styleClass="menu-Option" onMouseClicked="#handleExit" text="EXIT" fx:id="exitOption"/>
+        </HBox>
+    </bottom>
+</BorderPane>
+

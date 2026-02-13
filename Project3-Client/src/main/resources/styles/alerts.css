@@ -1,0 +1,45 @@
+/* Target the root dialog pane of the Alert */
+.dialog-pane {
+    -fx-alignment: center;
+    -fx-background-image: url("/images/gamebackground.jpeg") !important;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-font-family: "Irish Grover";
+    -fx-font-size: 30;
+    -fx-text-alignment: center;
+}
+
+/* Target the header/content area */
+.dialog-pane > .content {
+    -fx-background-color: transparent;
+    -fx-padding: 10 20 10 20;
+}
+
+/* Target the header region */
+.dialog-pane > .header-panel {
+    -fx-background-color: transparent;
+}
+
+/* Optional: Style the text to be visible on the background */
+.dialog-pane .label {
+    -fx-text-fill: #ffffff;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 20;
+}
+
+/* Target the header label specifically */
+.dialog-pane .header-panel .label {
+    -fx-text-fill: #ab0000;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-size: 35;
+}
+
+/* Optional: Style buttons to match the new dark theme */
+.dialog-pane .button {
+    -fx-background-color: #555555;
+    -fx-text-fill: white;
+}

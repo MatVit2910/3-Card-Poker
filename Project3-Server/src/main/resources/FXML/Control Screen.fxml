@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller = "IntroController" styleClass="root">
+    <center>
+        <VBox alignment="CENTER" spacing="15" translateX="250">
+            <VBox alignment="CENTER" spacing="10">
+                <Label styleClass="title-text" text="3 CARD POKER"/>
+                <Label styleClass="title-text" text="SERVER" />
+            </VBox>
+            <HBox alignment="CENTER">
+                <TextField fx:id="portInput" styleClass="port-field" promptText="Port Number"/>
+            </HBox>
+            <Button fx:id="toggleButton" onAction="#handleToggleButton" styleClass="start-button" text="START" />
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_LEFT">
+            <Button onAction="#handleControl" text="Control" styleClass="nav-button"/>
+            <Button onAction="#handleClients" text="Clients" styleClass="nav-button"/>
+            <Button onAction="#handleLog" text="Server Log" styleClass="nav-button"/>
+        </HBox>
+    </bottom>
+</BorderPane>
+
